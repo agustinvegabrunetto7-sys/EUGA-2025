@@ -87,7 +87,7 @@ export function Candidates() {
       <div className="container mx-auto max-w-6xl">
         {/* Directiva Section */}
         <div className="mb-20">
-          <h2 className="text-3xl font-bold text-center text-slate-800 mb-10">
+          <h2 className="text-3xl font-bold text-center text-slate-800 mb-10 font-sans">
             COMISIÓN <span className="text-celeste-500">DIRECTIVA</span>
           </h2>
 

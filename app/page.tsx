@@ -1,6 +1,7 @@
 import { LiquidBackground } from "@/components/background"
 import { Navbar } from "@/components/navbar"
 import { Hero } from "@/components/hero"
+import { Values } from "@/components/values"
 import { About } from "@/components/about"
 import { Proposals } from "@/components/proposals"
 import { Candidates } from "@/components/candidates"
@@ -14,6 +15,7 @@ export default function Page() {
       <Navbar />
       <div className="relative z-10">
         <Hero />
+        <Values />
         <About />
         <Proposals />
         <Candidates />
