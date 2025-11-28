@@ -8,8 +8,8 @@ const _geist = Geist({ subsets: ["latin"] })
 const _geistMono = Geist_Mono({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "EUGA 2025 - Encuentro Universitario de Gestión Ambiental",
-  description: "Plataforma oficial del Encuentro Universitario de Gestión Ambiental 2025",
+  title: "Estudiantes Unidos GA",
+  description: "Plataforma oficial de Estudiantes Unidos GA 2025",
   generator: "v0.app",
   icons: {
     icon: [
