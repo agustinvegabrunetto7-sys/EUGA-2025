@@ -7,58 +7,103 @@ import { cn } from "@/lib/utils"
 // Data for directiva
 const directiva = [
   {
-    role: "Presidente/a",
-    name: "Nombre Apellido",
-    course: "Curso",
-    image: "/placeholder.svg?height=400&width=400&text=Presidente",
+    role: "Presidente",
+    name: "Morena Kopecky",
+    image: "https://i.postimg.cc/1R6fCDLH/More-Pagina1.jpg",
   },
   {
-    role: "Vicepresidente/a",
-    name: "Nombre Apellido",
-    course: "Curso",
+    role: "Vicepresidente",
+    name: "Luciano Olcina",
     image: "/placeholder.svg?height=400&width=400&text=Vice",
   },
   {
-    role: "Secretario/a General",
-    name: "Nombre Apellido",
-    course: "Curso",
+    role: "Secretaria General",
+    name: "Luna Aguilera",
     image: "/placeholder.svg?height=400&width=400&text=Sec+Gral",
   },
   {
-    role: "Tesorero/a",
-    name: "Nombre Apellido",
-    course: "Curso",
-    image: "/placeholder.svg?height=400&width=400&text=Tesorero",
+    role: "Secretario de Parlamento",
+    name: "Joaquin Valfre",
+    image: "https://i.postimg.cc/05B1w4Wx/Valfre-Pagina.jpg",
   },
 ]
 
 // Data for secretariats team (simplified for demo, structured to match original intent)
-const teams: Record<string, Array<{ role: string; name: string; course: string; bio: string }>> = {
+const teams: Record<string, Array<{ role: string; name: string; bio: string; image?: string }>> = {
   comunicacion: [
     {
       role: "Secretario/a",
       name: "Nombre Apellido",
-      course: "XX",
       bio: "Apasionado/a por comunicar las ideas de todos.",
+      image: "",
     },
-    { role: "Sub-secretario/a", name: "Nombre Apellido", course: "XX", bio: "Coordinando las redes con creatividad." },
-    { role: "Comisión", name: "Nombre Apellido", course: "XX", bio: "Llevando la información a cada curso." },
+    { role: "Sub-secretario/a", name: "Nombre Apellido", bio: "Coordinando las redes con creatividad.", image: "" },
+    { role: "Comisión", name: "Nombre Apellido", bio: "Llevando la información a cada curso.", image: "" },
   ],
   hacienda: [
     {
       role: "Secretario/a",
       name: "Nombre Apellido",
-      course: "XX",
       bio: "Cuidando cada peso para que vuelva a los estudiantes.",
+      image: "",
     },
-    { role: "Sub-secretario/a", name: "Nombre Apellido", course: "XX", bio: "Gestionando recursos con transparencia." },
-    { role: "Comisión", name: "Nombre Apellido", course: "XX", bio: "Buscando las mejores oportunidades para todos." },
+    { role: "Sub-secretario/a", name: "Nombre Apellido", bio: "Gestionando recursos con transparencia.", image: "" },
+    { role: "Comisión", name: "Nombre Apellido", bio: "Buscando las mejores oportunidades para todos.", image: "" },
   ],
-  // Add other keys as needed, using a fallback for now to save space but maintaining structure
+  salud: [
+    { role: "Secretario/a", name: "Nombre Apellido", bio: "[Texto de presentación pendiente]", image: "" },
+    { role: "Sub-secretario/a", name: "Nombre Apellido", bio: "[Texto de presentación pendiente]", image: "" },
+    { role: "Comisión", name: "Nombre Apellido", bio: "[Texto de presentación pendiente]", image: "" },
+  ],
+  sociales: [
+    { role: "Secretario/a", name: "Nombre Apellido", bio: "[Texto de presentación pendiente]", image: "" },
+    { role: "Sub-secretario/a", name: "Nombre Apellido", bio: "[Texto de presentación pendiente]", image: "" },
+    { role: "Comisión", name: "Nombre Apellido", bio: "[Texto de presentación pendiente]", image: "" },
+  ],
+  genero: [
+    { role: "Secretario/a", name: "Nombre Apellido", bio: "[Texto de presentación pendiente]", image: "" },
+    { role: "Sub-secretario/a", name: "Nombre Apellido", bio: "[Texto de presentación pendiente]", image: "" },
+    { role: "Comisión", name: "Nombre Apellido", bio: "[Texto de presentación pendiente]", image: "" },
+  ],
+  humanidades: [
+    { role: "Secretario/a", name: "Nombre Apellido", bio: "[Texto de presentación pendiente]", image: "" },
+    { role: "Sub-secretario/a", name: "Nombre Apellido", bio: "[Texto de presentación pendiente]", image: "" },
+    { role: "Comisión", name: "Nombre Apellido", bio: "[Texto de presentación pendiente]", image: "" },
+  ],
+  edilicias: [
+    { role: "Secretario/a", name: "Nombre Apellido", bio: "[Texto de presentación pendiente]", image: "" },
+    { role: "Sub-secretario/a", name: "Nombre Apellido", bio: "[Texto de presentación pendiente]", image: "" },
+    { role: "Comisión", name: "Nombre Apellido", bio: "[Texto de presentación pendiente]", image: "" },
+  ],
+  parlamentaria: [
+    { role: "Secretario/a", name: "Nombre Apellido", bio: "[Texto de presentación pendiente]", image: "" },
+    { role: "Sub-secretario/a", name: "Nombre Apellido", bio: "[Texto de presentación pendiente]", image: "" },
+    { role: "Comisión", name: "Nombre Apellido", bio: "[Texto de presentación pendiente]", image: "" },
+  ],
+  relaciones: [
+    { role: "Secretario/a", name: "Nombre Apellido", bio: "[Texto de presentación pendiente]", image: "" },
+    { role: "Sub-secretario/a", name: "Nombre Apellido", bio: "[Texto de presentación pendiente]", image: "" },
+    { role: "Comisión", name: "Nombre Apellido", bio: "[Texto de presentación pendiente]", image: "" },
+  ],
+  actas: [
+    { role: "Secretario/a", name: "Nombre Apellido", bio: "[Texto de presentación pendiente]", image: "" },
+    { role: "Sub-secretario/a", name: "Nombre Apellido", bio: "[Texto de presentación pendiente]", image: "" },
+    { role: "Comisión", name: "Nombre Apellido", bio: "[Texto de presentación pendiente]", image: "" },
+  ],
+  deportes: [
+    { role: "Secretario/a", name: "Nombre Apellido", bio: "[Texto de presentación pendiente]", image: "" },
+    { role: "Sub-secretario/a", name: "Nombre Apellido", bio: "[Texto de presentación pendiente]", image: "" },
+    { role: "Comisión", name: "Nombre Apellido", bio: "[Texto de presentación pendiente]", image: "" },
+  ],
+  arte: [
+    { role: "Secretario/a", name: "Nombre Apellido", bio: "[Texto de presentación pendiente]", image: "" },
+    { role: "Sub-secretario/a", name: "Nombre Apellido", bio: "[Texto de presentación pendiente]", image: "" },
+    { role: "Comisión", name: "Milagros Buffa", bio: "Hola, soy Milagros y entre a la lista por las propuestas que tenía en mente y para hacer del colegio un lugar mejor.", image: "https://i.postimg.cc/1X2z73yg/Buffa-Comision-Arte.jpg" },
+  ],
   default: [
-    { role: "Secretario/a", name: "Nombre Apellido", course: "XX", bio: "[Texto de presentación pendiente]" },
-    { role: "Sub-secretario/a", name: "Nombre Apellido", course: "XX", bio: "[Texto de presentación pendiente]" },
-    { role: "Comisión", name: "Nombre Apellido", course: "XX", bio: "[Texto de presentación pendiente]" },
+    { role: "Secretario/a", name: "Nombre Apellido", bio: "[Texto de presentación pendiente]", image: "" },
+    { role: "Sub-secretario/a", name: "Nombre Apellido", bio: "[Texto de presentación pendiente]", image: "" },
+    { role: "Comisión", name: "Nombre Apellido", bio: "[Texto de presentación pendiente]", image: "" },
   ],
 }
 
@@ -102,8 +147,7 @@ export function Candidates() {
                   />
                 </div>
                 <h3 className="font-bold text-lg text-slate-800">{member.name}</h3>
-                <p className="text-celeste-600 font-medium text-sm mb-1">{member.role}</p>
-                <p className="text-slate-400 text-xs">{member.course}</p>
+                <p className="text-celeste-600 font-medium text-sm">{member.role}</p>
               </GlassCard>
             ))}
           </div>
@@ -145,15 +189,14 @@ export function Candidates() {
                 <div className="flex items-center gap-4 mb-4">
                   <div className="w-12 h-12 rounded-full bg-slate-200 overflow-hidden shrink-0">
                     <img
-                      src="/placeholder.svg?height=100&width=100&text=Foto"
-                      alt="Foto"
+                      src={member.image || "/placeholder.svg?height=100&width=100&text=Foto"}
+                      alt={member.name}
                       className="w-full h-full object-cover"
                     />
                   </div>
                   <div>
                     <h4 className="font-bold text-slate-800 leading-tight">{member.name}</h4>
                     <p className="text-xs text-celeste-600 font-medium">{member.role}</p>
-                    <p className="text-xs text-slate-400">{member.course}</p>
                   </div>
                 </div>
                 <p className="text-sm text-slate-600 italic mt-auto">"{member.bio}"</p>
